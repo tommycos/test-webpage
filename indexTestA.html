@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <header id="header">
+            <ul>
+                <li>
+                    <a href="#main">Main</a>
+                </li>
+                <li>
+                    <a href="#questionnaire">Questionnaire</a>
+                </li>
+                <li>
+                    <a href="#results">Results</a>
+                </li>
+            </ul>
+    </header>
+
+    <section class="showcase-body" id="main">
+        <h1>The World of Dinosaurs Test A</h1>
+        <div>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia error,
+                totam sint quo illum? Asperiores dolor quae voluptatem deserunt ducimus architecto rem, 
+                eum doloremque placeat, officiis itaque ipsam.
+            </p>
+        </div>
+        <h2>Brachiosaurus</h2>
+        <div>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia error,
+                totam sint quo illum? Asperiores dolor quae voluptatem deserunt ducimus architecto rem, 
+                eum doloremque placeat, officiis itaque ipsam.
+            </p>
+            <img src="./images/brachiosaurus.jpg">
+        </div>
+        <h2>Kentrosaurus</h2>
+        <div>
+            <img src="./images/kentrosaurus.jpg" alt="A kentrosaurus skeleton">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia error,
+                totam sint quo illum? Asperiores dolor quae voluptatem deserunt ducimus architecto rem, 
+                eum doloremque placeat, officiis itaque ipsam.
+            </p>
+        </div>
+        <h2>Allosaurus</h2>
+        <div>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia error,
+                totam sint quo illum? Asperiores dolor quae voluptatem deserunt ducimus architecto rem, 
+                eum doloremque placeat, officiis itaque ipsam.
+            </p>
+            <img src="./images/allosaurus.jpg" alt="An allosaurus skeleton with a reconstructed head">
+        </div>
+        <h2>Pterodactylus</h2>
+        <div>
+            <img src="./images/pterodactylus.jpg" alt="The fossilized remains of a pterodactylus">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia error,
+                totam sint quo illum? Asperiores dolor quae voluptatem deserunt ducimus architecto rem, 
+                eum doloremque placeat, officiis itaque ipsam.
+            </p>
+        </div>
+        <h2>Archaeopteryx</h2>
+        <div>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia error,
+                totam sint quo illum? Asperiores dolor quae voluptatem deserunt ducimus architecto rem, 
+                eum doloremque placeat, officiis itaque ipsam.
+            </p>
+            <img src="./images/archaeopteryx.jpg" alt="The fossilized remains of an archaeopteryx">
+        </div>
+        <h2>Habitat</h2>
+        <div>
+            <img src="./images/habitat.png" alt="A display of several smaller animal remains like prehistoric fish">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia error,
+                totam sint quo illum? Asperiores dolor quae voluptatem deserunt ducimus architecto rem, 
+                eum doloremque placeat, officiis itaque ipsam.
+            </p>
+        </div>
+
+        <h2>Bonus Dinosaur</h2>
+        <div class="bonus-content">
+            <button type="button" id="revealBonus">Reveal bonus dinosaur</button>
+            <div class="bonus-image"  id="bonusDino">
+                <h2>Velociraptor</h2>
+                <img src="./images/velociraptor.jpg" alt="Velociraptor skeleton reconstruction"><br>
+                <a href="https://de.wikipedia.org/wiki/Velociraptor">Image from the Velociraptor Wikipedia page</a>
+            </div>
+        </div>
+        <script>
+            document.getElementById("revealBonus").addEventListener("click",()=>{
+                document.getElementById("bonusDino").classList.toggle("open");
+            })
+        </script>
+    </section>
+
+    <section class="questionnaire-body" id="questionnaire">
+        <h1>Questionnaire</h1>
+        <label for="">Select your favourite dinosaur: </label>
+        <select name="selectDino" id="selectDino">
+            <optgroup label="What's your favourite Dinosaur?">
+                <option>Brachiosaurus</option>
+                <option>Kentrosaurus</option>
+                <option>Allosaurus</option>
+                <option>Pterodactylus</option>
+                <option>Archaeopteryx</option>
+                <option>Velociraptor</option>
+                <option>I don't like dinosaurs</option>
+            </optgroup>
+        </select>
+
+        <fieldset class="question">
+            <legend>Question 1: </legend>
+            <div>
+                <input type="radio" id="answerOne"  value="one" checked>
+                <label for="answerOne">Answer 1</label>
+            </div>
+            <div>
+                <input type="radio" id="answerTwo" name="answers" value="two" >
+                <label for="answerTwo">Answer 2</label>
+            </div>
+            <div>
+                <input type="radio" id="answerThree" value="three" >
+                <label for="answerThree">Answer 3</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="question">
+            <legend>Question 2: </legend>
+
+                <input type="checkbox" id="dinoOne" name="dinoOne" value="dinoOne">
+                <label for="dinoOne">Dinosaur 1</label>
+
+                <input type="checkbox" id="dinoTwo" name="dinoOne" value="dinoTwo">
+                <label for="dinoTwo">Dinosaur 2</label>
+
+                <input type="checkbox" id="dinoThree" name="dinoOne" value="dinoThree">
+                <label for="dinoThree">Dinosaur 3</label>
+
+        </fieldset>
+
+        <fieldset class="question">
+            <legend>Question 3: </legend>
+            <div>
+                <input type="radio" id="answer2One" name="answers2" value="one" checked>
+                <label for="answerOne">Answer 1</label>
+            </div>
+            <div>
+                <input type="radio" id="answer2Two" name="answers2" value="two" >
+                <label for="answerTwo">Answer 2</label>
+            </div>
+            <div>
+                <input type="radio" id="answer2Three" name="answers2" value="three" >
+                <label for="answerThree">Answer 3</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="question">
+            <legend>Question 4: </legend>
+            <div>
+                <input type="radio" id="answer3One"  name="answers3" value="one" checked>
+                <label for="answerOne">Answer 1</label>
+            </div>
+            <div>
+                <input type="radio" id="answer3Two" name="answers3" value="two" >
+                <label for="answerTwo">Answer 2</label>
+            </div>
+            <div>
+                <input type="radio" id="answer3Three" name="answers3" value="three" >
+                <label for="answerThree">Answer 3</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="question">
+            <legend>Question 5: </legend>
+            <div>
+                <input type="radio" id="answer4One"  name="answers4" value="one" checked>
+                <label for="answerOne" tabindex="1">Answer 1</label>
+            </div>
+            <div>
+                <input type="radio" id="answer4Two" name="answers4" value="two" >
+                <label for="answerTwo" tabindex="2">Answer 2</label>
+            </div>
+            <div>
+                <input type="radio" id="answer4Three" name="answers4" value="three" >
+                <label for="answerThree" tabindex="3">Answer 3</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="question">
+            <legend>Question 6: </legend>
+
+                <input type="checkbox" id="dino2One" name="dinoTwo" value="dino2One">
+                <label for="dino2One">Dinosaur 1</label>
+
+                <input type="checkbox" id="dino2Two" name="dinoTwo" value="dino2Two">
+                <label for="dino2Two">Dinosaur 2</label>
+
+                <input type="checkbox" id="dino2Three" name="dinoTwo" value="dino2Three">
+                <label for="dino2Three">Dinosaur 3</label>
+
+        </fieldset>
+
+        <fieldset class="question">
+            <legend>Question 7: </legend>
+
+                <input type="checkbox" id="dino3One" name="dinoThree" value="dino3One">
+                <label for="dino3One">Dinosaur 1</label>
+
+                <input type="checkbox" id="dino3Two" name="dinoThree" value="dino3Two">
+                <label for="dino3Two">Dinosaur 2</label>
+  
+                <input type="checkbox" id="dino3Three" name="dinoThree" value="dino3Three">
+                <label for="dino3Three">Dinosaur 3</label>
+
+        </fieldset>
+        
+        <form action="index.html">
+            <h2>Personal Information </h2>
+            <label for="firstName">First name</label> <br>
+            <input type="text" id="firstName" name="firstName"> <br>
+            <label for="lastName">Last name</label> <br>
+            <input type="text" id="lastName" name="lastName"> <br>
+            <label for="adress">Address</label> <br>
+            <input type="text" id="address" name="address"> <br>
+            <input type="submit" value="submit">
+        </form>
+    </section>
+    
+    <section id="results">
+        <h1>Results</h1>
+        <p>
+            The following results are placeholder only, they are not calculated based on your answers
+            so feel free to answer whatever you want or nothing at all. <b>
+                Don't forget to click the button below to see the
+                result screen.
+            </b>
+        </p>
+        <button id="openModal">Open Result Screen</button>
+
+        <div class="modal" id="modal">
+            <div class="modal-background">
+                    <h2>You got 100/100 points (you will always get 100 points)</h2>
+            </div>
+            <div class="button-container">
+                <button id="closeModalButton">Close</button>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById("openModal").addEventListener("click",()=>{
+                document.getElementById("modal").classList.add("open");
+            })
+            
+            document.getElementById("closeModalButton").addEventListener("click",()=>{
+                document.getElementById("modal").classList.remove("open")
+            })
+        </script>
+    </section>
+
+    <footer>
+        <p><a href="#header">Back to the top</a></p>
+        <p>Content and images taken from: <a href="https://www.museumfuernaturkunde.berlin/en/museum/exhibitions/world-dinosaurs"
+            >Museum für Naturkunde Berlin</a></p>
+    </footer>
+</body>
+</html>

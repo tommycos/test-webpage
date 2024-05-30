@@ -1,0 +1,138 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+}
+header {
+    justify-content: center;
+    padding: 20px;
+    background: #FFBF00;
+    margin: auto;
+}
+
+header > ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+li {
+    margin: 10px;
+    font-weight: 700;
+    font-size: larger;
+}
+
+li > a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+section {
+    max-width: 768px;
+    justify-content: center;
+    margin: auto;
+}
+
+p {
+    padding: 10px 10px 10px 10px;
+}
+
+.question {
+    margin: 20px 0 20px 0;
+}
+
+#main > div {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#main > h2 {
+    text-align: center;
+    margin: auto;
+    padding: 25px 0;
+}
+
+#main .bonus-content {
+    display: block;
+    text-align: center;
+}
+
+#main .bonus-content > button {
+    padding: 25px;
+    margin: 10px 0;
+}
+
+#main .bonus-image {
+    display: none;
+}
+
+#main .bonus-image.open {
+    display: block;
+}
+
+#main .bonus-image > image {
+    margin: auto;
+}
+
+
+img {
+    width: 300px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin-top: 5rem;
+    background: #FFBF00;
+}
+
+.modal {
+    display: none;
+	position: fixed;
+	inset: 0;
+	z-index: 100;
+	padding: 2rem;
+	background-color: rgba(0,0,0,.5);
+	overflow: scroll;
+}
+
+.modal.open {
+    display: block;
+}
+
+.modal-background {
+    text-align: center;
+    background-color: #f7f7f7;
+    background-position: 0 0, .25rem .25rem;
+	background-size: .5rem .5rem;
+	color: #3e4b55;
+	font-size: 75%;
+	padding: 1rem;   
+}
+
+#openModal {
+    padding: 20px 70px 20px 70px;
+    display: flex;
+    margin: auto;
+    justify-self: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#closeModalButton {
+    margin-top: 10px;
+    padding: 10px;
+}
