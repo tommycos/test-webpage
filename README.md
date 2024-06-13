@@ -10,4 +10,5 @@ How to host:
 - If http-server was correctly installed, a command line output should appear.
 - Use your browser to go to localhost:8080 or whatever port is shown in the command line output.
 
-If you want to test the other version of the web page (indexTestA.html ) rename it to index.html
+If you want to test the other version of the web page (indexTestA.html ) rename it to index.html.
+Force refresh the page in case that no errors are shown (Windows: Ctrl + F5 / Mac: Cmd + Shift + R)
